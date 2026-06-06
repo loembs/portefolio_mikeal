@@ -6,7 +6,7 @@ export const creations: Creation[] = videoProjects;
 
 /** Aggregated stats for the stats counter section */
 export const globalStats = [
-  { label: "Vues totales", value: "220K+", icon: "▶" },
+  { label: "Vues totales", value: "1.5M+", icon: "▶" },
   { label: "Likes cumulés", value: "20K+", icon: "♥" },
   { label: "Nouveaux followers", value: "3.3K+", icon: "★" },
   { label: "Heures de visionnage", value: "624h+", icon: "◉" },
