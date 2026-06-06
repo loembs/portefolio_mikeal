@@ -59,13 +59,12 @@ function HomeVideoCard({
         <video
           ref={videoRef}
           src={creation.videoSrc}
+          autoPlay
           loop
-          muted={false}
+          muted
           playsInline
           preload="metadata"
-          className={`w-full aspect-[9/16] md:aspect-[4/5] object-cover transition-all duration-700 ${
-            isPlaying ? "" : "grayscale"
-          }`}
+          className="w-full aspect-[9/16] md:aspect-[4/5] object-cover transition-all duration-700"
         />
 
         {/* Play overlay */}
@@ -144,7 +143,13 @@ function Index() {
     stats: { views: "Intro", likes: "Intro", newFollowers: "Intro" },
   };
 
-  const heroShowcase = creations.slice(0, 5);
+  const heroShowcase = [
+    creations[0], // Première vidéo existante
+    creations[1], // Deuxième vidéo existante
+    creations[7], // Vidéo id 8 - Défilé Donatela
+    creations[8], // Vidéo id 9 - Review défilé Donatela
+    creations[9], // Vidéo id 10 - Immobilier
+  ];
   const featuredCreations = creations.slice(0, 6);
 
   return (
