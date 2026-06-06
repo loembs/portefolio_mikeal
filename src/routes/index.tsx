@@ -288,17 +288,6 @@ function Index() {
             </div>
           ))}
         </div>
-
-        <div className="grid md:grid-cols-12 gap-x-6 gap-y-12">
-          {featuredCreations.map((creation, i) => (
-            <HomeVideoCard
-              key={creation.id}
-              creation={creation}
-              index={i}
-              onSelect={setSelectedVideo}
-            />
-          ))}
-        </div>
       </section>
 
       <section className="mx-auto max-w-[1600px] px-6 md:px-10 pb-24 md:pb-32">
